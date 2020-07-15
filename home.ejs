@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Fresh Farm</title>
+
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+
+  <!-- fontawesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"></script>
+
+  <!-- bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section id="title">
+
+    <!-- Nav Bar -->
+    <div class="container-fluid" style="background-image: url(Images/Vegetables.jpg);padding-bottom: 200px">
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="">Vegetables</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <p style="color: white">Hello, <%= name %></p>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+
+      <!-- Title -->
+
+      <div class="row">
+
+        <div class="col-lg-6">
+          <h1>Buy vegetables and fruits fresh from the farm.</h1>
+        </div>
+  </section>
+
+  </div>
+
+  <!-- about us -->
+  <section id="about">
+    <h2 style="margin-top:25px">About us.</h2>
+    <h3>Few years ago we decided to bring local fresh products from the field to your door.</h3>
+    <h3>Now we are here for you.</h3>
+    <img src="./images/faq-right.png" alt="">
+  </section>
+
+  <!-- Pricing -->
+<section id ="pricing">
+
+  <div class="album py-5 bg-light">
+    <h2>Our Products.</h2>
+    <h3>Directly from the farm, freshly grown for our clients.</h3>
+
+    <form action="/" method="post">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img class="img-gallery" src="./images/tomato.jpg" alt="">
+              <div class="card-body">
+                <p class="card-text">Tomatoes.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">5.5₪</small>
+                  <div class="btn-group">
+                    <div class="input-group mb-3">
+                      <select class="custom-select" id="inputGroupSelect01" name="Tomatoes">
+                        <option selected>0</option>
+                        <option value="1 kg">1 kg</option>
+                        <option value="2 kg">2 kg</option>
+                        <option value="3 kg">3 kg</option>
+                        <option value="4 kg">4 kg</option>
+                      </select>
+                      <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01">Quantity</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img class="img-gallery" src="./images/cucumber.jpg" alt="">
+              <div class="card-body">
+                <p class="card-text">Cucumbers.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">4₪</small>
+                  <div class="btn-group">
+                    <div class="input-group mb-3">
+                      <select class="custom-select" id="inputGroupSelect01" name="Cucumbers">
+                        <option selected>0</option>
+                        <option value="1 kg">1 kg</option>
+                        <option value="2 kg">2 kg</option>
+                        <option value="3 kg">3 kg</option>
+                        <option value="4 kg">4 kg</option>
+                      </select>
+                      <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01">Quantity</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img class="img-gallery" src="./images/red-bell-pepper.jpg" alt="">
+              <div class="card-body">
+                <p class="card-text">Red Pepper.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">6.5₪</small>
+                  <div class="btn-group">
+                    <div class="input-group mb-3">
+                      <select class="custom-select" id="inputGroupSelect01" name="Red-Peppers">
+                        <option selected>0</option>
+                        <option value="1 kg">1 kg</option>
+                        <option value="2 kg">2 kg</option>
+                        <option value="3 kg">3 kg</option>
+                        <option value="4 kg">4 kg</option>
+                      </select>
+                      <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01">Quantity</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img class="img-gallery" src="./images/lettuce.jpg" alt="">
+              <div class="card-body">
+                <p class="card-text">Lettuce.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">7₪</small>
+                  <div class="btn-group">
+                    <div class="input-group mb-3">
+                      <select class="custom-select" id="inputGroupSelect01" name="Lettuce">
+                        <option selected>0</option>
+                        <option value="1 kg">1 kg</option>
+                        <option value="2 kg">2 kg</option>
+                        <option value="3 kg">3 kg</option>
+                        <option value="4 kg">4 kg</option>
+                      </select>
+                      <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01">Quantity</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img class="img-gallery" src="./images/bok-choy.jpg" alt="">
+              <div class="card-body">
+                <p class="card-text">Bok-Choy.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">12₪</small>
+                  <div class="btn-group">
+                    <div class="input-group mb-3">
+                      <select class="custom-select" id="inputGroupSelect01" name="Bok-Choy">
+                        <option selected>0</option>
+                        <option value="1 unit">1 unit</option>
+                        <option value="2 units">2 units</option>
+                        <option value="3 units">3 units</option>
+                        <option value="4 units">4 units</option>
+                      </select>
+                      <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01">Quantity</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img class="img-gallery" src="./images/asparagus.jpg" alt="">
+              <div class="card-body">
+                <p class="card-text">Asparagus.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">24₪</small>
+                  <div class="btn-group">
+                    <div class="input-group mb-3">
+                      <select class="custom-select" id="inputGroupSelect01" name="Asparagus">
+                        <option selected>0</option>
+                        <option value="1 unit">1 unit</option>
+                        <option value="2 units">2 units</option>
+                        <option value="3 units">3 units</option>
+                        <option value="4 units">4 units</option>
+                      </select>
+                      <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01">Quantity</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img class="img-gallery" src="./images/pink-lady.jpg" alt="">
+              <div class="card-body">
+                <p class="card-text">Apples.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">14₪</small>
+                  <div class="btn-group">
+                    <div class="input-group mb-3">
+                      <select class="custom-select" id="inputGroupSelect01" name="Apple-Pink-Lady">
+                        <option selected>0</option>
+                        <option value="1 units">1 unit</option>
+                        <option value="2 units">2 units</option>
+                        <option value="3 units">3 units</option>
+                        <option value="4 units">4 units</option>
+                      </select>
+                      <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01">Quantity</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img class="img-gallery" src="./images/bananas.jpg" alt="">
+              <div class="card-body">
+                <p class="card-text">Bananas.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">11₪</small>
+                  <div class="btn-group">
+                    <div class="input-group mb-3">
+                      <select class="custom-select" id="inputGroupSelect01" name="Bananas">
+                        <option selected>0</option>
+                        <option value="1 unit">1 kg</option>
+                        <option value="2 units">2 kg</option>
+                        <option value="3 units">3 kg</option>
+                        <option value="4 units">4 kg</option>
+                      </select>
+                      <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01">Quantity</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img class="img-gallery" src="./images/mango.jpg" alt="">
+              <div class="card-body">
+                <p class="card-text">Mango.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">14₪</small>
+                  <div class="btn-group">
+                    <div class="input-group mb-3">
+                      <select class="custom-select" id="inputGroupSelect01" name="Mango">
+                        <option selected>0</option>
+                        <option value="1 unit">1 unit</option>
+                        <option value="2 units">2 units</option>
+                        <option value="3 units">3 units</option>
+                        <option value="4 units">4 units</option>
+                      </select>
+                      <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01">Quantity</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <button type="submit" class="btn btn-success btn-lg" style="width: 184px;margin-top: 0px;margin-bottom: 40px;"><a>Checkout</a></button>
+    </form>
+</section>
+
+  <!-- Make a reservation -->
+
+  <section id="contact" style="background-image: url(Images/fruits-and-vegetables.jpg);padding-bottom: 200px;">
+    <form action="/contact-us" method="post">
+
+    <h2 style="padding-top: 30px">Contact us.</h2>
+
+    <div class="form-row was-validated">
+      <div class="col-md-6 mb-3">
+        <label for="validationServer02">Full name</label>
+        <input type="text" class="form-control is-invalid" id="validationServer02" name="name" required>
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <label for="validationServer01">Phone</label>
+        <input type="text" class="form-control is-invalid" id="validationServer01" name="phone" required>
+      </div>
+    </div>
+
+      <div class="col-md-12 mb-9 was-validated">
+        <label for="validationServer03">Email</label>
+        <input type="text" class="form-control is-invalid" id="validationServer03" name="email" required>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="validationTextarea">Note</label>
+      <textarea class="form-control" id="validationTextarea" placeholder="What you want to say..." name="note"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-success btn-lg" style="width: 184px;margin-top: 0px;margin-bottom: 40px;"><a>Contact Us</a></button>
+    </form>
+
+  </section>
+
+  <!-- Footer -->
+
+  <footer id="footer">
+
+    <i class="footer-logo fab fa-facebook-f"></i>
+    <i class="footer-logo fab fa-instagram"></i>
+    <i class="footer-logo fas fa-envelope"></i>
+    <p style="font-size: 1rem">© Copyright 2020 Igal-Rochkes</p>
+
+  </footer>
+
+</body>
+
+</html>
